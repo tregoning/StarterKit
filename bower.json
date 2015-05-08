@@ -1,0 +1,19 @@
+{
+  "name": "dashboards",
+  "version": "0.0.0",
+  "authors": [
+    "John Tregoning <jtregoning@netflix.com>"
+  ],
+  "description": "Netflix's Dashboarding System",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jasmine": "~2.3.2"
+  }
+}
