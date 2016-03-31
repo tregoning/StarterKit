@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var stylus = require('gulp-stylus');
-var minifyCss = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
@@ -30,7 +30,7 @@ gulp.task('css', function() {
             browsers: ['last 2 versions']
         }))
         .pipe(gulp.dest(cssDestination))
-        .pipe(minifyCss())
+        .pipe(cleanCSS())
         .pipe(rename({extname: '.min.css'}))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(cssDestination))
